@@ -1,0 +1,54 @@
+[config]
+path = <%= node['autosub']['location']%>
+downloadeng = False
+minmatchscore = 8
+minmatchscorerss = 14
+scandisk = 3600
+checksub = 28800
+checkrss = 900
+rootpath = <%= node['autosub']['rootpath']%>
+fallbacktoeng = True
+subeng = en
+subnl =
+notifyen = True
+notifynl = True
+logfile = AutoSubService.log
+postprocesscmd =
+configversion = 2
+launchbrowser = True
+
+[logfile]
+loglevel = info
+loglevelconsole = error
+logsize = 1000000
+lognum = 1
+
+[webserver]
+webserverip = 0.0.0.0
+webserverport = 8083
+username =
+password =
+webroot =
+
+[notify]
+notifymail = False
+mailsrv = smtp.gmail.com:587
+mailfromaddr = example@gmail.com
+mailtoaddr = example@gmail.com
+mailusername = example@gmail.com
+mailpassword = mysecretpassword
+mailsubject = Subs info
+mailencryption = TLS
+mailauth =
+notifygrowl = False
+growlhost = 127.0.0.1
+growlport = 23053
+growlpass = mysecretpassword
+notifynma = False
+nmaapi = API key
+notifytwitter = False
+twitterkey = token key
+twittersecret = token secret
+notifyprowl = False
+prowlapi =
+prowlpriority = -2
