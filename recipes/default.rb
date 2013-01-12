@@ -13,7 +13,7 @@ bash "install_autosub" do
   EOH
    not_if do
         ::File.exists?("#{node['autosub']['location']}/config.properties") &&
-        node['autosub']['force_recompile'] == false
+        node['autosub']['force_download'] == false
     end
 end
 
