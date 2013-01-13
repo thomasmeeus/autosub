@@ -35,3 +35,7 @@ end
 service "autosub" do
   action :start
 end
+
+bash "update-rc.d" do
+  code "update-rc.d autosub defaults"
+end
